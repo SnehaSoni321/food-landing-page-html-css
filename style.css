@@ -1,0 +1,205 @@
+ body{
+    background-color:#333;
+ }
+ main {
+    max-width: 1000px;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.container1 {
+
+    width: 1000px;
+    height: 350px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.project-intro {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    line-height: 0.5;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.img1 {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 90px;
+    margin-top: 40px;
+    transform: scale(1.5);
+    animation: moveImage 2s ease-in-out infinite alternate;
+    
+}
+
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0) scale(1.5);
+    }
+
+    100% {
+        transform: translateX(100px) scale(1.5);
+        /* You can change 50px as needed */
+    }
+}
+
+.contact {
+    color: white;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    line-height: 0.5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar {
+  background-color:black;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #0e0c0c;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+
+/* Navbar items */
+.navbar li {
+  display: inline-block;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar links */
+.navbar a {
+  color:white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  line-height: 0px;
+}
+
+
+.navbar a:hover {
+  background-color: orange;
+  color: #1c1c1c;
+}
+
+
+.food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.food-table tr {
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #333;
+}
+
+.food-table td {
+    padding: 30px;
+    vertical-align: middle;
+    color: white;
+
+}
+
+.food-table td:nth-child(2) {
+    padding-top: 0px; 
+}
+
+
+.food-table img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.food-table h2 {
+    margin-bottom:10px ;
+    font-size: 1.8em;
+    color: #ffcc00;
+}
+
+.food-table ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.food-table li {
+    margin-bottom: 8px;
+}
+
+.order-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: darkorange;
+}
+
+
+footer {
+  height: 80px;
+  background-color:black;
+  color: #ffffff;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  overflow: hidden; /* Prevents content from spilling */
+}
+
+
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+
+}   
+
+
