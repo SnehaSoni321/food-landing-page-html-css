@@ -11,12 +11,19 @@
 
 .container1 {
 
-    width: 1000px;
-    height: 350px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
     background-color: #1c1c1c;
     overflow: hidden;
     justify-content: space-between;
     position: relative;
+    text-align: center;
+    flex-direction: column;
+
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
 
 }
 
@@ -138,7 +145,8 @@
 
 
 .food-table img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
@@ -201,5 +209,54 @@ footer a {
     transition: color 0.3s ease;
 
 }   
+
+@media (max-width: 768px) {
+
+  .container1 {
+    display: flex;              /* ADD THIS */
+    flex-direction: column;     /* ADD THIS */
+    align-items: center;        /* ADD THIS */
+    height: auto;
+    text-align: center;
+  }
+
+  .img1 {
+    margin: 20px auto;
+    transform: scale(1);
+    animation: none;
+  }
+
+  .project-intro {
+    width: 100%;
+    padding: 15px;
+    line-height: 1.4;   /* thoda readable */
+  }
+
+  .contact {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .food-table tr {
+    display: block;
+  }
+
+  .food-table td {
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .food-table img {
+    margin: 0 auto 15px;
+  }
+}
+
 
 
